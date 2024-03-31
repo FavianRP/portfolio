@@ -292,7 +292,7 @@ footer .credit a {
 
   .about .row .about-img {
     /* flex: 1 1 45rem; */
-    height: 600px;
+    height: auto;
     border-radius: 5%;
     box-shadow: 0px 25px 20px 0px #243040;
   }
@@ -316,24 +316,8 @@ footer .credit a {
     font-size: 1.6rem;
   }
 
-  .menu p {
-    font-size: 1.2rem;
-  }
-
-  .contact .row {
-    flex-wrap: wrap;
-  }
-
-  .contact .row map {
-    height: 30rem;
-  }
-
-  .contact .row form {
-    padding-top: 0;
-  }
-
-  .modal-content {
-    flex-wrap: wrap;
+  .container {
+    padding: 20px;
   }
 }
 
