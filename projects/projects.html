@@ -15,10 +15,13 @@
 
     <!-- Feather Icons -->
     <script src="https://unpkg.com/feather-icons"></script>
+
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
     <!-- Header start -->
-    <nav class="navbar">
+    <nav class="navbar" data-aos="fade-down" data-aos-duration="1000">
       <a href="../index.html" class="navbar-logo"><span>favianrp</span></a>
 
       <div class="navbar-nav">
@@ -35,25 +38,25 @@
     </nav>
     <!-- Header end -->
 
-    <!-- Skills section start -->
-    <section id="skills" class="skills">
+    <!-- Project section start -->
+    <section id="projects" class="projects">
       <div class="container">
-        <h1 class="heading">Projects</h1>
-        <p style="font-size: 15px; font-weight: 300; margin-top: 10px; margin-bottom: 1rem; text-align: center">Some project that I have been made.</p>
+        <h1 class="heading" data-aos="zoom-in" data-aos-duration="1000">Projects</h1>
+        <p style="font-size: 15px; font-weight: 300; margin-top: 10px; margin-bottom: 1rem; text-align: center" data-aos="zoom-in" data-aos-duration="1000">Some project that I have been made.</p>
 
         <div class="box-container">
-          <div class="box">
+          <div class="box" data-aos="fade-right" data-aos-duration="1000">
             <img src="../img/portfolio/1.png" alt="" />
             <h3>Landing Page Carkas</h3>
             <p>An landing page about selling used luxury cars which contains the latest luxury cars, car specifications and etc. (School project)</p>
             <a href="https://favianrp.github.io/carkas.github.io" class="cta">Visit Website</a>
           </div>
-          <div class="box">
+          <div class="box" data-aos="zoom-in" data-aos-duration="1200">
             <img src="../img/portfolio/3.jpg" alt="" />
             <h3>Landing Page JokiPedia</h3>
             <p>An landing page containing promotions for a game boosting shop.</p>
           </div>
-          <div class="box">
+          <div class="box" data-aos="fade-left" data-aos-duration="1000">
             <img src="../img/portfolio/2.png" alt="" />
             <h3>Landing Page Java</h3>
             <p>An landing page about the island of Java which contains history, traditional houses, food & drinks, and destinations in each province. (School project)</p>
@@ -84,5 +87,11 @@
 
     <!-- Javascript -->
     <script src="../js/script.js"></script>
+
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

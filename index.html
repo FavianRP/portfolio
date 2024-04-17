@@ -15,10 +15,13 @@
 
       <!-- Feather Icons -->
       <script src="https://unpkg.com/feather-icons"></script>
+
+      <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
 <!-- Header start -->
-<nav class="navbar">
+  <nav class="navbar" data-aos="fade-down" data-aos-duration="1000">
     <a href="#" class="navbar-logo"><span>favianrp</span></a>
 
     <div class="navbar-nav">
@@ -38,10 +41,10 @@
 <!-- About Section start -->
 <section id="about" class="about">
     <div class="row">
-      <div class="about-img">
+      <div class="about-img" data-aos="fade-left" data-aos-duration="1100">
         <img src="img/profil.png" alt="profil" />
       </div>
-      <div class="content">
+      <div class="content" data-aos="fade-right" data-aos-duration="1100">
         <h4>Hi, I'm</h4>
         <h3>Favian Rafi Pratama</h3>
         <p>I am a Front End Web Developer, UI designer, and want to become a fullstack Web Developer.</p>
@@ -69,5 +72,11 @@
   
   <!-- Javascript -->
   <script src="js/script.js"></script>
+
+  <!-- AOS -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>

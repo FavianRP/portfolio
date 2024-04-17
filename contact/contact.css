@@ -95,26 +95,94 @@ body {
   display: none;
 }
 
-/* Skills Section */
-.skills {
+/* Contact Section */
+.contact {
   padding: 8rem 7% 1.4rem;
   /* display: flex; */
 }
 
-.container {
-  background: var(--bg);
-  padding: 15px 9%;
-  padding-bottom: 100px;
-}
-
-.container .heading {
+.contact h2 {
   text-align: center;
-  padding-bottom: 10px;
+  padding-bottom: 15px;
   color: #fff;
   font-size: 3rem;
 }
 
-.container .box-container {
+.container {
+  display: flex;
+  background: var(--bg);
+  padding: 15px 9%;
+  padding-bottom: 100px;
+  justify-content: center;
+}
+
+.container form {
+  width: 900px;
+  text-align: center;
+  padding-top: 1rem;
+}
+
+form .input-box {
+  display: flex;
+  justify-content: space-between;
+}
+
+.input-box .input-field {
+  width: 48.5%;
+}
+
+.field .item {
+  width: 100%;
+  padding: 18px;
+  background: transparent;
+  border: 2px solid var(--primary);
+  outline: none;
+  border-radius: 6px;
+  font-size: 16px;
+  color: #ededed;
+  margin: 12px 0;
+}
+
+.field .item::placeholder {
+  color: rgba(255, 255, 255, 3);
+}
+
+.field .error-txt {
+  font-size: 14px;
+  color: red;
+  text-align: left;
+  margin: -5px 0 10px;
+  display: none;
+}
+
+forn .textarea-field .item {
+  resize: none;
+}
+
+form .textarea-field .error-txt {
+  margin-top: -10px;
+}
+
+form button {
+  padding: 12px 32px;
+  background-color: var(--primary);
+  border: none;
+  outline: none;
+  border-radius: 6px;
+  box-shadow: 0 0 10px #0ef;
+  font-size: 16px;
+  color: #fff;
+  letter-spacing: 1px;
+  font-weight: 600px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+form button:hover {
+  box-shadow: none;
+}
+
+/* .container .box-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
 }
@@ -147,7 +215,7 @@ body {
   box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
   transform: scale(1.03);
   transition: 0.5s;
-}
+} */
 
 /* Footer */
 footer {

@@ -15,10 +15,13 @@
 
     <!-- Feather Icons -->
     <script src="https://unpkg.com/feather-icons"></script>
+
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
     <!-- Header start -->
-    <nav class="navbar">
+    <nav class="navbar" data-aos="fade-down" data-aos-duration="1000">
       <a href="../index.html" class="navbar-logo"><span>favianrp</span></a>
 
       <div class="navbar-nav">
@@ -35,19 +38,48 @@
     <!-- Header end -->
 
     <!-- Skills section start -->
-    <section id="skills" class="skills">
-      <div class="container">
-        <h1 class="heading">COMING SOON</h1>
-        <!-- <p style="font-size: 15px; font-weight: 300; margin-top: 10px; margin-bottom: 1rem; text-align: center">Some skills that I have and I currently learned it.</p> -->
-
-        <div class="box-container">
-          <div class="box">
-            <img src="../img/maintenance.png" alt="" />
-            <h3>UNDER MAINTENANCE</h3>
-            <p>Masih dalam pembangunan ygy!</p>
+    <section id="contact" class="contact">
+      <h2>Contact Me!</h2>
+      <!-- <p style="font-size: 15px; font-weight: 300; margin-top: 10px; margin-bottom: 1rem; text-align: center">Some skills that I have and I currently learned it.</p> -->
+      <div class="container" data-aos="zoom-in" data-aos-duration="1500">
+        <form name="portfolio-contact-form" action="#">
+          <div class="input-box">
+            <div class="input-field field">
+              <input type="text" placeholder="Full Name" id="name" class="item" autocomplete="off" name="full name" />
+              <div class="error-txt">Full Name can't be blank!</div>
+            </div>
+            <div class="input-field field">
+              <input type="text" placeholder="Email Addres" id="email" class="item" autocomplete="off" name="email address" />
+              <div class="error-txt">Email Address can't be blank!</div>
+            </div>
           </div>
-        </div>
+
+          <div class="input-box">
+            <div class="input-field field">
+              <input type="text" placeholder="Phone Number" id="phone" class="item" autocomplete="off" name="phone number" />
+              <div class="error-txt">Phone Number can't be blank!</div>
+            </div>
+            <div class="input-field field">
+              <input type="text" placeholder="Subject" id="subject" class="item" autocomplete="off" name="subject" />
+              <div class="error-txt">Subject can't be blank!</div>
+            </div>
+          </div>
+
+          <div class="textarea-field field">
+            <textarea name="messages" id="message" cols="30" rows="10" placeholder="Your Message" class="item" autocomplete="off"></textarea>
+            <div class="error-txt">Messages can't be blank!</div>
+          </div>
+
+          <button type="submit">Send Messages</button>
+        </form>
       </div>
+      <!-- <div class="box-container">
+        <div class="box">
+          <img src="../img/maintenance.png" alt="" />
+          <h3>UNDER MAINTENANCE</h3>
+          <p>Masih dalam pembangunan ygy!</p>
+        </div>
+      </div> -->
     </section>
     <!-- Skills section end -->
 
@@ -69,7 +101,31 @@
       feather.replace();
     </script>
 
+    <!-- SweetAlert -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
     <!-- Javascript -->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="../js/script.js"></script>
+    <script src="contact.js"></script>
+
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+    <!-- Spreadsheets -->
+    <script>
+      const scriptURL = "https://script.google.com/macros/s/AKfycbyRdSYx3VroNMmElSmpzV2GO7HC-LJXkhQtQ-NpZPGy8VqAm4rPTl5gAQKB--fntK4a/exec";
+      const form = document.forms["portfolio-contact-form"];
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => console.log("Success!", response))
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
   </body>
 </html>

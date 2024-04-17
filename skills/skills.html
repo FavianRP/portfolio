@@ -15,10 +15,13 @@
 
     <!-- Feather Icons -->
     <script src="https://unpkg.com/feather-icons"></script>
+
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
     <!-- Header start -->
-    <nav class="navbar">
+    <nav class="navbar" data-aos="fade-down" data-aos-duration="1000">
       <a href="../index.html" class="navbar-logo"><span>favianrp</span></a>
 
       <div class="navbar-nav">
@@ -38,26 +41,26 @@
     <!-- Skills section start -->
     <section id="skills" class="skills">
       <div class="container">
-        <h1 class="heading">Skills</h1>
-        <p style="font-size: 15px; font-weight: 300; margin-top: 10px; margin-bottom: 1rem; text-align: center">Some skills that I have and I currently learned it.</p>
+        <h1 class="heading" data-aos="zoom-in" data-aos-duration="1000">Skills</h1>
+        <p style="font-size: 15px; font-weight: 300; margin-top: 10px; margin-bottom: 1rem; text-align: center" data-aos="zoom-in" data-aos-duration="1000">Some skills that I have and I currently learned it.</p>
 
         <div class="box-container">
-          <div class="box">
+          <div class="box" data-aos="fade-right" data-aos-duration="1500">
             <img src="../img/skills/html.png" alt="" />
             <h3>HTML</h3>
             <p>Knows almost all basic HTML structures and can assemble HTML structures into a website</p>
           </div>
-          <div class="box">
+          <div class="box" data-aos="fade-right" data-aos-duration="1000">
             <img src="../img/skills/css-3.png" alt="" />
             <h3>CSS</h3>
             <p>Know almost all the basic CSS structures and can improve the appearance of a website</p>
           </div>
-          <div class="box">
+          <div class="box" data-aos="fade-left" data-aos-duration="1000">
             <img src="../img/skills/js.png" alt="" />
             <h3>Javascript</h3>
             <p>Know the basic structure of Javascript and be able to create a dynamic appearance on a website</p>
           </div>
-          <div class="box">
+          <div class="box" data-aos="fade-left" data-aos-duration="1500">
             <img src="../img/skills/figma.png" alt="" />
             <h3>Figma</h3>
             <p>Know basic Figma and be able to create UI/UX designs on websites.</p>
@@ -87,5 +90,11 @@
 
     <!-- Javascript -->
     <script src="../js/script.js"></script>
+
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
