@@ -70,7 +70,7 @@
             <div class="error-txt">Messages can't be blank!</div>
           </div>
 
-          <button type="submit">Send Messages</button>
+          <button type="submit" id="tombol">Send Messages</button>
         </form>
       </div>
       <!-- <div class="box-container">
@@ -102,10 +102,19 @@
     </script>
 
     <!-- SweetAlert -->
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="../js/sweetalert/dist/sweetalert2.all.min.js"></script>
+    <script>
+      const tombol = document.querySelector("#tombol");
+      tombol.addEventListener("click", function () {
+        Swal.fire({
+          title: "Yey!",
+          text: "Your messages successfully submited!",
+          icon: "success",
+        });
+      });
+    </script>
 
     <!-- Javascript -->
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="../js/script.js"></script>
     <script src="contact.js"></script>
 

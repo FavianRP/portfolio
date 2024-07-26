@@ -1,24 +1,25 @@
-function sendMail() {
-  (function () {
-    emailjs.init("in5CCWfc7_yAgM9Mg");
-  });
+function checkInputs() {
+  const items = document.querySelectorAll(".item");
 
-  var params = {
-    sendername: document.querySelector("#name").value,
-    senderemail: document.querySelector("#email").value,
-    to: document.querySelector("#to").value,
-    subject: document.querySelector("#subject").value,
-    replyto: document.querySelector("#replyto").value,
-    message: document.querySelector("#message").value,
-  };
+  for (const item of items) {
+    if (item.value == "") {
+      item.classList.add("error");
+      item.parentElement.classList.add("error");
+    }
 
-  var serviceID = "service_pzubl3j";
-  var templateID = "template_dwqmals";
-
-  emailjs
-    .send(serviceID, templateID, params)
-    .then((res) => {
-      alert("Email Sent Succesfully");
-    })
-    .catch();
+    item.addEventListener("keyup", () => {
+      if (item.value != "") {
+        item.classList.remove("error");
+        item.parentElement.classList.remove("error");
+      } else {
+        item.classList.add("error");
+        item.parentElement.classList.add("error");
+      }
+    });
+  }
 }
+
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+  checkInputs();
+});

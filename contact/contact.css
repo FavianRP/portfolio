@@ -104,7 +104,7 @@ body {
 .contact h2 {
   text-align: center;
   padding-bottom: 15px;
-  color: #fff;
+  color: #ffffff;
   font-size: 3rem;
 }
 
@@ -143,8 +143,12 @@ form .input-box {
   margin: 12px 0;
 }
 
+.field.error .item {
+  border-color: red;
+}
+
 .field .item::placeholder {
-  color: rgba(255, 255, 255, 3);
+  color: #b6b6b6;
 }
 
 .field .error-txt {
@@ -153,6 +157,10 @@ form .input-box {
   text-align: left;
   margin: -5px 0 10px;
   display: none;
+}
+
+.field.error .error-txt {
+  display: block;
 }
 
 forn .textarea-field .item {
