@@ -95,7 +95,7 @@ body {
   display: none;
 }
 
-/* Skills Section */
+/* Projects Section */
 .projects {
   padding: 8rem 7% 1.4rem;
   /* display: flex; */
@@ -109,7 +109,7 @@ body {
 
 .container .heading {
   text-align: center;
-  padding-bottom: 15px;
+  padding-bottom: 10px;
   color: #fff;
   font-size: 3rem;
 }
@@ -121,7 +121,7 @@ body {
 
 .container .box-container .box {
   box-shadow: 0 5px 10px rgba(0, 0, 0, 2);
-  border-radius: 10px;
+  border-radius: 5px;
   background: var(--bg);
   text-align: center;
   padding: 30px 20px;
@@ -129,7 +129,7 @@ body {
 }
 
 .container .box-container .box img {
-  height: 150px;
+  height: 100px;
 }
 
 .container .box-container .box h3 {
