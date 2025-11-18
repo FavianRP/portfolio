@@ -1,0 +1,18 @@
+/* typing */
+.typing {
+  display: inline-block;
+  overflow: hidden;                 /* pastikan teks tidak overflow */
+  white-space: nowrap;              /* jangan wrap ke baris baru */
+  border-right: 3px solid white;    /* efek kursor */
+  animation: typing 3s steps(30, end), blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 16ch; }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent; }
+  50% { border-color: white; }
+}
