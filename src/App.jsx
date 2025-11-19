@@ -41,7 +41,7 @@ function Navbar() {
           href="#home" 
           className="text-2xl font-bold italic hover:scale-105 transition-transform"
         >
-          <span className="text-cyan-400">favianrp</span>
+          <span className="text-red-600">favianrp</span>
         </a>
 
         {/* Desktop Navigation */}
@@ -50,10 +50,10 @@ function Navbar() {
             <a
               key={link.name}
               href={link.href}
-              className="text-slate-300 hover:text-cyan-400 transition-colors duration-200 text-lg relative group"
+              className="text-slate-300 hover:text-red-600 transition-colors duration-200 text-lg relative group"
             >
               {link.name}
-              <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-cyan-400 group-hover:w-full transition-all duration-300"></span>
+              <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-red-600 group-hover:w-full transition-all duration-300"></span>
             </a>
           ))}
         </div>
@@ -62,7 +62,7 @@ function Navbar() {
         <div className="flex items-center space-x-4">
           <a
             href="#contact"
-            className="hidden sm:flex items-center gap-2 bg-cyan-500 hover:bg-cyan-600 text-slate-900 px-5 py-2.5 rounded-lg font-semibold shadow-lg hover:shadow-cyan-500/50 transition-all duration-300 hover:scale-105"
+            className="hidden sm:flex items-center gap-2 bg-red-700 hover:bg-red-600 text-white px-5 py-2.5 rounded-lg font-semibold shadow-lg hover:shadow-red-700/50 transition-all duration-300 hover:scale-105"
           >
             <Mail size={18} />
             Email Me
@@ -70,7 +70,7 @@ function Navbar() {
 
           {/* Hamburger Button */}
           <button
-            className="md:hidden text-slate-300 hover:text-cyan-400 transition-colors p-2"
+            className="md:hidden text-slate-300 hover:text-red-600 transition-colors p-2"
             onClick={() => setIsOpen(!isOpen)}
             aria-label="Toggle menu"
           >
@@ -95,7 +95,7 @@ function Navbar() {
       >
         {/* Close Button */}
         <button
-          className="absolute top-6 right-6 text-slate-300 hover:text-cyan-400 transition-colors"
+          className="absolute top-6 right-6 text-slate-300 hover:text-red-600 transition-colors"
           onClick={() => setIsOpen(false)}
           aria-label="Close menu"
         >
@@ -104,7 +104,7 @@ function Navbar() {
 
         {/* Mobile Logo */}
         <div className="px-6 pt-6 pb-8 border-b border-slate-800">
-          <span className="text-2xl font-bold italic text-cyan-400">favianrp</span>
+          <span className="text-2xl font-bold italic text-red-600">favianrp</span>
         </div>
 
         {/* Mobile Links */}
@@ -114,7 +114,7 @@ function Navbar() {
               key={link.name}
               href={link.href}
               onClick={() => setIsOpen(false)}
-              className="text-slate-300 hover:text-cyan-400 hover:bg-slate-800 px-4 py-3 rounded-lg transition-all duration-200 text-lg"
+              className="text-slate-300 hover:text-red-600 hover:bg-slate-800 px-4 py-3 rounded-lg transition-all duration-200 text-lg"
             >
               {link.name}
             </a>
@@ -124,7 +124,7 @@ function Navbar() {
           <a
             href="#contact"
             onClick={() => setIsOpen(false)}
-            className="flex items-center justify-center gap-2 bg-cyan-500 hover:bg-cyan-600 text-slate-900 px-4 py-3 rounded-lg font-semibold shadow-lg mt-6 transition-all duration-300"
+            className="flex items-center justify-center gap-2 bg-red-700 hover:bg-red-600 text-white px-4 py-3 rounded-lg font-semibold shadow-lg mt-6 transition-all duration-300"
           >
             <Mail size={18} />
             Email Me
@@ -163,10 +163,10 @@ export default function App() {
     { name: "HTML", level: 90, color: "bg-orange-500" },
     { name: "CSS", level: 85, color: "bg-blue-500" },
     { name: "JavaScript", level: 80, color: "bg-yellow-500" },
-    { name: "React", level: 60, color: "bg-cyan-500" },
-    { name: "Tailwind CSS", level: 60, color: "bg-teal-500" },
+    { name: "React", level: 60, color: "bg-blue-400" },
+    { name: "Tailwind CSS", level: 60, color: "bg-cyan-500" },
     { name: "Python", level: 75, color: "bg-green-500" },
-    { name: "Cyber Security", level: 70, color: "bg-purple-500" }
+    { name: "Cyber Security", level: 70, color: "bg-red-800" }
   ];
 
   const projects = [
@@ -212,7 +212,7 @@ export default function App() {
               }`}
             >
               <div className="relative group">
-                <div className="absolute -inset-1 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-2xl blur opacity-25 group-hover:opacity-50 transition duration-300"></div>
+                <div className="absolute -inset-1 bg-gradient-to-r from-red-700 to-red-500 rounded-2xl blur opacity-25 group-hover:opacity-50 transition duration-300"></div>
                 <div className="relative rounded-2xl overflow-hidden shadow-2xl">
                   <img
                     src={profile}
@@ -229,26 +229,26 @@ export default function App() {
                 isVisible.home ? "opacity-100 translate-x-0" : "opacity-0 translate-x-10"
               }`}
             >
-              <h4 className="text-xl md:text-2xl font-medium text-cyan-400 mb-2">
+              <h4 className="text-xl md:text-2xl font-medium text-red-600 mb-2">
                 Hi, I'm
               </h4>
               <h1 className="text-4xl md:text-6xl font-bold mb-4 bg-gradient-to-r from-white to-slate-400 bg-clip-text text-transparent typing">
                 Favian Rafi Pratama
               </h1>
               <p className="text-lg md:text-xl leading-relaxed text-slate-400 mb-8">
-                I am a <span className="text-cyan-400 font-semibold">Front End Web Developer</span>, <span className="text-cyan-400 font-semibold">Cyber Enthusiast</span>, and want to become a <span className="text-cyan-400 font-semibold">Fullstack Web Developer</span>.
+                I am a <span className="text-red-600 font-semibold">Front End Web Developer</span>, <span className="text-red-600 font-semibold">Cyber Enthusiast</span>, and want to become a <span className="text-red-600 font-semibold">Fullstack Web Developer</span>.
               </p>
 
               <div className="flex flex-wrap gap-4">
                 <a
                   href="#projects"
-                  className="bg-cyan-500 hover:bg-cyan-600 text-slate-900 px-8 py-3 rounded-lg font-semibold shadow-lg hover:shadow-cyan-500/50 transition-all duration-300 hover:scale-105"
+                  className="bg-red-700 hover:bg-red-600 text-white px-8 py-3 rounded-lg font-semibold shadow-lg hover:shadow-red-700/50 transition-all duration-300 hover:scale-105"
                 >
                   View Projects
                 </a>
                 <a
                   href="#contact"
-                  className="border-2 border-cyan-500 text-cyan-400 hover:bg-cyan-500 hover:text-slate-900 px-8 py-3 rounded-lg font-semibold transition-all duration-300 hover:scale-105"
+                  className="border-2 border-red-600 text-red-600 hover:bg-red-600 hover:text-white px-8 py-3 rounded-lg font-semibold transition-all duration-300 hover:scale-105"
                 >
                   Contact Me
                 </a>
@@ -270,7 +270,7 @@ export default function App() {
             }`}
           >
             <h2 className="text-4xl md:text-5xl font-bold mb-4">
-              My <span className="text-cyan-400">Skills</span>
+              My <span className="text-red-600">Skills</span>
             </h2>
             <p className="text-slate-400 text-lg">Some Technologies I work with</p>
           </div>
@@ -317,7 +317,7 @@ export default function App() {
             }`}
           >
             <h2 className="text-4xl md:text-5xl font-bold mb-4">
-              Featured <span className="text-cyan-400">Projects</span>
+              My <span className="text-red-600">Projects</span>
             </h2>
             <p className="text-slate-400 text-lg">Some things I've built</p>
           </div>
@@ -326,14 +326,14 @@ export default function App() {
             {projects.map((project, index) => (
               <div
                 key={project.title}
-                className={`bg-slate-900 rounded-xl overflow-hidden shadow-lg hover:shadow-cyan-500/20 transition-all duration-500 hover:-translate-y-2 ${
+                className={`bg-slate-900 rounded-xl overflow-hidden shadow-lg hover:shadow-red-700/20 transition-all duration-500 hover:-translate-y-2 ${
                   isVisible.projects 
                     ? "opacity-100 translate-y-0" 
                     : "opacity-0 translate-y-10"
                 }`}
                 style={{ transitionDelay: `${index * 150}ms` }}
               >
-                <div className="h-48 bg-gradient-to-br from-cyan-500/20 to-blue-500/20 flex items-center justify-center">
+                <div className="h-48 bg-gradient-to-br from-red-700/20 to-red-600/20 flex items-center justify-center">
                     <img 
                       src={project.image} 
                       alt={project.title} 
@@ -347,7 +347,7 @@ export default function App() {
                     {project.tech.map((tech) => (
                       <span
                         key={tech}
-                        className="bg-cyan-500/10 text-cyan-400 px-3 py-1 rounded-full text-sm"
+                        className="bg-red-700/10 text-red-500 px-3 py-1 rounded-full text-sm"
                       >
                         {tech}
                       </span>
@@ -357,7 +357,7 @@ export default function App() {
                     href={project.link}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 text-cyan-400 hover:text-cyan-300 transition-colors"
+                    className="inline-flex items-center gap-2 text-red-500 hover:text-red-400 transition-colors"
                   >
                     View Project <ExternalLink size={16} />
                   </a>
@@ -380,7 +380,7 @@ export default function App() {
             }`}
           >
             <h2 className="text-4xl md:text-5xl font-bold mb-6">
-              Get In <span className="text-cyan-400">Touch</span>
+              Get In <span className="text-red-600">Touch</span>
             </h2>
             <p className="text-slate-400 text-lg mb-12 max-w-2xl mx-auto">
               I'm currently open to new opportunities and collaborations. 
@@ -389,7 +389,7 @@ export default function App() {
 
             <a
               href="mailto:favianrp@example.com"
-              className="inline-flex items-center gap-3 bg-cyan-500 hover:bg-cyan-600 text-slate-900 px-10 py-4 rounded-lg font-bold text-lg shadow-lg hover:shadow-cyan-500/50 transition-all duration-300 hover:scale-105 mb-12"
+              className="inline-flex items-center gap-3 bg-red-700 hover:bg-red-600 text-white px-10 py-4 rounded-lg font-bold text-lg shadow-lg hover:shadow-red-700/50 transition-all duration-300 hover:scale-105 mb-12"
             >
               <Mail size={24} />
               Send Me an Email
@@ -406,7 +406,7 @@ export default function App() {
 
         <div className="flex justify-center gap-6 mb-8">
           <a
-            className="text-slate-400 hover:text-cyan-400 transition-all duration-300 hover:scale-110"
+            className="text-slate-400 hover:text-red-600 transition-all duration-300 hover:scale-110"
             href="https://instagram.com/favianskii_"
             target="_blank"
             rel="noopener noreferrer"
@@ -416,7 +416,7 @@ export default function App() {
           </a>
 
           <a
-            className="text-slate-400 hover:text-cyan-400 transition-all duration-300 hover:scale-110"
+            className="text-slate-400 hover:text-red-600 transition-all duration-300 hover:scale-110"
             href="https://github.com/FavianRP"
             target="_blank"
             rel="noopener noreferrer"
@@ -426,7 +426,7 @@ export default function App() {
           </a>
 
           <a
-            className="text-slate-400 hover:text-cyan-400 transition-all duration-300 hover:scale-110"
+            className="text-slate-400 hover:text-red-600 transition-all duration-300 hover:scale-110"
             href="www.linkedin.com/in/favianrafipratama"
             target="_blank"
             rel="noopener noreferrer"

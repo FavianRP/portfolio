@@ -35,7 +35,7 @@ export default function Navbar() {
           href="#home" 
           className="text-2xl font-bold italic hover:scale-105 transition-transform"
         >
-          <span className="text-cyan-400">favianrp</span>
+          <span className="text-red-400">favianrp</span>
         </a>
 
         {/* Desktop Navigation */}
@@ -44,10 +44,10 @@ export default function Navbar() {
             <a
               key={link.name}
               href={link.href}
-              className="text-slate-300 hover:text-cyan-400 transition-colors duration-200 text-lg relative group"
+              className="text-slate-300 hover:text-red-400 transition-colors duration-200 text-lg relative group"
             >
               {link.name}
-              <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-cyan-400 group-hover:w-full transition-all duration-300"></span>
+              <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-red-400 group-hover:w-full transition-all duration-300"></span>
             </a>
           ))}
         </div>
@@ -56,7 +56,8 @@ export default function Navbar() {
         <div className="flex items-center space-x-4">
           <a
             href="#contact"
-            className="hidden sm:flex items-center gap-2 bg-cyan-500 hover:bg-cyan-600 text-slate-900 px-5 py-2.5 rounded-lg font-semibold shadow-lg hover:shadow-cyan-500/50 transition-all duration-300 hover:scale-105"
+            className="hidden sm:flex items-center gap-2 bg-red-500 hover:bg-red-600 text-slate-900 px-5 py-2.5 rounded-lg font-semibold shadow-lg hover:shadow-red
+            -500/50 transition-all duration-300 hover:scale-105"
           >
             <Mail size={18} />
             Email Me
@@ -64,7 +65,7 @@ export default function Navbar() {
 
           {/* Hamburger Button */}
           <button
-            className="md:hidden text-slate-300 hover:text-cyan-400 transition-colors p-2"
+            className="md:hidden text-slate-300 hover:text-red-400 transition-colors p-2"
             onClick={() => setIsOpen(!isOpen)}
             aria-label="Toggle menu"
           >
@@ -89,7 +90,7 @@ export default function Navbar() {
       >
         {/* Close Button */}
         <button
-          className="absolute top-6 right-6 text-slate-300 hover:text-cyan-400 transition-colors"
+          className="absolute top-6 right-6 text-slate-300 hover:text-red-400 transition-colors"
           onClick={() => setIsOpen(false)}
           aria-label="Close menu"
         >
@@ -98,7 +99,7 @@ export default function Navbar() {
 
         {/* Mobile Logo */}
         <div className="px-6 pt-6 pb-8 border-b border-slate-800">
-          <span className="text-2xl font-bold italic text-cyan-400">favianrp</span>
+          <span className="text-2xl font-bold italic text-red-400">favianrp</span>
         </div>
 
         {/* Mobile Links */}
@@ -108,7 +109,7 @@ export default function Navbar() {
               key={link.name}
               href={link.href}
               onClick={() => setIsOpen(false)}
-              className="text-slate-300 hover:text-cyan-400 hover:bg-slate-800 px-4 py-3 rounded-lg transition-all duration-200 text-lg"
+              className="text-slate-300 hover:text-red-400 hover:bg-slate-800 px-4 py-3 rounded-lg transition-all duration-200 text-lg"
             >
               {link.name}
             </a>
@@ -118,7 +119,7 @@ export default function Navbar() {
           <a
             href="#contact"
             onClick={() => setIsOpen(false)}
-            className="flex items-center justify-center gap-2 bg-cyan-500 hover:bg-cyan-600 text-slate-900 px-4 py-3 rounded-lg font-semibold shadow-lg mt-6 transition-all duration-300"
+            className="flex items-center justify-center gap-2 bg-red-500 hover:bg-red-600 text-slate-900 px-4 py-3 rounded-lg font-semibold shadow-lg mt-6 transition-all duration-300"
           >
             <Mail size={18} />
             Email Me
@@ -131,29 +132,29 @@ export default function Navbar() {
         <section id="home" className="min-h-screen flex items-center justify-center bg-gradient-to-b from-slate-900 to-slate-950">
           <div className="text-center px-6">
             <h1 className="text-5xl md:text-7xl font-bold mb-4">
-              Hi, I'm <span className="text-cyan-400">Favian</span>
+              Hi, I'm <span className="text-red-400">Favian</span>
             </h1>
-            <p className="text-xl text-slate-400">Web Developer & Designer</p>
+            <p className="text-xl text-slate-400">Web Developer & Cyber Security Enthusiast</p>
           </div>
         </section>
 
         <section id="skills" className="min-h-screen flex items-center justify-center bg-slate-900">
           <div className="text-center px-6">
-            <h2 className="text-4xl font-bold mb-4 text-cyan-400">Skills</h2>
+            <h2 className="text-4xl font-bold mb-4 text-red-400">Skills</h2>
             <p className="text-slate-400">My technical expertise</p>
           </div>
         </section>
 
         <section id="projects" className="min-h-screen flex items-center justify-center bg-slate-950">
           <div className="text-center px-6">
-            <h2 className="text-4xl font-bold mb-4 text-cyan-400">Projects</h2>
+            <h2 className="text-4xl font-bold mb-4 text-red-400">Projects</h2>
             <p className="text-slate-400">Things I've built</p>
           </div>
         </section>
 
         <section id="contact" className="min-h-screen flex items-center justify-center bg-slate-900">
           <div className="text-center px-6">
-            <h2 className="text-4xl font-bold mb-4 text-cyan-400">Contact</h2>
+            <h2 className="text-4xl font-bold mb-4 text-red-400">Contact</h2>
             <p className="text-slate-400">Let's work together</p>
           </div>
         </section>
