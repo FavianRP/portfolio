@@ -5,6 +5,7 @@ import "./App.css";
 import CARKASimg from "./img/carkas.png";
 import JAVAimg from "./img/java.png";
 import TOPUPimg from "./img/topup.jpg";
+import infokelasimg from "./img/infokelas.png";
 
 // Navbar Component
 function Navbar() {
@@ -190,6 +191,13 @@ export default function App() {
       tech: ["HTML", "CSS", "Javascript"],
       link: "https://favianrp.github.io/java.github.io/",
       image: JAVAimg
+    },
+    {
+      title: "InfoKelas Website",
+      description: "An website app that use for tell information about the class on campus to student",
+      tech: ["Vite.js", "Node.JS", "SQLite3"],
+      link: "https://2ia15.infokelas.web.id",
+      image: infokelasimg
     }
   ];
 
