@@ -52,11 +52,6 @@ export default function PortfolioPage() {
       category: "WriteUp"
     },
     {
-      title: "Perjalanan Menuju OSCP",
-      description: "Pengalaman saya meraih sertifikasi OSCP. Sebuah perjalanan yang seru dan penuh tantangan.",
-      category: "WriteUp"
-    },
-    {
       title: "Hackfest0x08",
       description: "WriteUp CTF dari event CTF open recruitmet Cyber Community Universitas Gunadarma (CCUG)",
       category: "WriteUp"
