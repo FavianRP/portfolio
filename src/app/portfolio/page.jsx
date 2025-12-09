@@ -43,12 +43,6 @@ export default function PortfolioPage() {
       title: "InfoKelas",
       description: "Website App yang saya buat untuk menyelesaikan masalah yang ada di kelas.",
       category: "Project"
-    },
-    {
-      title: "LandingPage CARKAS",
-      description: "Sebuah landingpage yang berguna untuk berjualan mobil second atau bekas.",
-      category: "Project",
-      url: "https://favianrp.github.io/carkas.github.io/"
     }
   ];
 
