@@ -1,7 +1,8 @@
 import { useState, useEffect } from "react";
 import { Menu, X, ArrowRight, Github, Linkedin, Instagram, Mail } from "lucide-react";
-import WriteupsPage from "../writeups/page.jsx";
 import { Link } from "react-router-dom";
+import { Typewriter } from "react-simple-typewriter";
+import Footer from "../../components/Footer";
 
 export default function PortfolioPage() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -45,13 +46,13 @@ export default function PortfolioPage() {
     },
     {
       title: "LandingPage CARKAS",
-      description: "Sebuah landingpage yang berguna untuk berjualan mobil second atau bekas,",
+      description: "Sebuah landingpage yang berguna untuk berjualan mobil second atau bekas.",
       category: "Project",
       url: "https://favianrp.github.io/carkas.github.io/"
     }
   ];
 
-    const writeup = [
+  const writeup = [
     {
       title: "PatriotCTF 2025",
       description: "Writeup CTF yang telah saya kerjakan dari event di CTFtime",
@@ -60,7 +61,7 @@ export default function PortfolioPage() {
     },
     {
       title: "Hackfest0x08",
-      description: "WriteUp CTF dari event CTF open recruitmet Cyber Community Universitas Gunadarma (CCUG)",
+      description: "WriteUp CTF dari event CTF open recruitment Cyber Community Universitas Gunadarma (CCUG)",
       category: "WriteUp"
     }
   ];
@@ -79,7 +80,7 @@ export default function PortfolioPage() {
       <nav className="font-poppins fixed top-0 left-0 right-0 z-50 bg-black/80 backdrop-blur-md border-b border-gray-800 animate-fade-down">
         <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
           {/* Logo */}
-          <div className="font-poppins flex items-center gap-3">
+          <div className="flex items-center gap-3">
             <div className="w-10 h-10 bg-white rounded-lg flex items-center justify-center">
               <span className="text-black text-xl">👤</span>
             </div>
@@ -119,7 +120,7 @@ export default function PortfolioPage() {
         {/* Mobile Menu */}
         {isMenuOpen && (
           <div className="md:hidden border-t border-gray-800 bg-black">
-            {["Blog", "Notes", "Writeups"].map((item) => (
+            {["Projects", "Writeups", "Contact"].map((item) => (
               <button
                 key={item}
                 onClick={() => scrollToSection(item.toLowerCase())}
@@ -135,17 +136,28 @@ export default function PortfolioPage() {
       {/* Hero Section */}
       <section id="home" className="pt-32 pb-20 px-6 animate-fade-down">
         <div className="max-w-4xl mx-auto">
-          <h1 className="font-poppins text-5xl md:text-6xl font-bold mb-6">
-            Hii, saya Favian Rafi Pratama 👋
+          <h1 className="text-5xl md:text-6xl font-bold mb-6">
+            Hii, saya{' '}
+            <span style={{ color: '#8a9ba7ff', fontWeight: 'bold' }}>
+              <Typewriter
+                words={['Favian Rafi Pratama 👋', 'Cyber Security Enthusiast', 'Web Developer']}
+                loop={true}
+                cursor
+                cursorStyle="|"
+                typeSpeed={70}
+                deleteSpeed={50}
+                delaySpeed={1000}
+              />
+            </span>
           </h1>
-          <p className="font-poppins text-xl text-gray-400 mb-4 leading-relaxed">
-            Saya seorang <span className="text-white italic">Mahasiswa Informatika</span> yang di siang hari menjadi <span className="text-white font-semibold">Web Developer</span>, dan di malam hari menjadi 
-            <span className="text-cyan-400 font-semibold"> Cyber Security Enthusiast.</span>
+          <p className="text-xl text-gray-400 mb-4 leading-relaxed">
+            Saya seorang <span className="text-white italic">Mahasiswa Informatika</span> yang di siang hari menjadi <span className="text-cyan-400 font-semibold">Web Developer</span>, dan di malam hari menjadi 
+            <span className="text-gray-200 font-semibold"> Cyber Security Enthusiast.</span>
           </p>
-          <p className="font-poppins text-xl text-gray-400 mb-4 leading-relaxed">
+          <p className="text-xl text-gray-400 mb-4 leading-relaxed">
             Di situs ini, kalian dapat melihat beberapa Project dan WriteUp CTF yang telah saya kerjakan! Yuk kenal lebih dalam tentang saya.
           </p>
-          <p className="font-poppins text-xl text-gray-400 leading-relaxed">
+          <p className="text-xl text-gray-400 leading-relaxed">
             Kadang main CTF di weekend, Kadang juga suka main valorant dan cs kok kalo lagi gabut, hehe. 😅
           </p>
         </div>
@@ -155,11 +167,14 @@ export default function PortfolioPage() {
       <section id="projects" className="py-20 px-6 animate-fade-down">
         <div className="max-w-4xl mx-auto">
           <div className="flex items-center justify-between mb-8">
-            <h2 className="font-poppins text-3xl font-bold">Project Saya</h2>
-            <button className="font-poppins text-gray-400 hover:text-white flex items-center gap-2 transition-colors">
+            <h2 className="text-3xl font-bold">Project Saya</h2>
+            <Link
+              to="/projects"
+              className="text-gray-400 hover:text-white flex items-center gap-2 transition-colors"
+            >
               Lihat Semua Project yang telah saya buat
               <ArrowRight size={20} />
-            </button>
+            </Link>
           </div>
 
           <div className="space-y-4">
@@ -257,93 +272,24 @@ export default function PortfolioPage() {
           </p>
           
           <div className="flex items-center gap-6 mb-8">
-            <a
-              href="https://github.com/FavianRP"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-gray-400 hover:text-white transition-colors"
-            >
-              <span>GitHub</span>
-            </a>
+            <a href="https://github.com/FavianRP" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white">GitHub</a>
             <span className="text-gray-600">|</span>
-            <a
-              href="https://www.linkedin.com/in/favianrafipratama"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-gray-400 hover:text-white transition-colors"
-            >
-              <span>LinkedIn</span>
-            </a>
+            <a href="https://www.linkedin.com/in/favianrafipratama" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white">LinkedIn</a>
             <span className="text-gray-600">|</span>
-            <a
-              href="mailto:favfianrafi@gmail.com"
-              className="text-gray-400 hover:text-white transition-colors"
-            >
-              <span className="underline">email me</span> at FavianRP
-            </a>
+            <a href="mailto:favfianrafi@gmail.com" className="text-gray-400 hover:text-white underline">Email Me</a>
           </div>
 
-          {/* Social Icons */}
           <div className="flex gap-4">
-            <a
-              href="https://www.linkedin.com/in/favianrafipratama"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="p-3 rounded-lg border border-gray-800 hover:border-gray-600 hover:bg-gray-800 transition-all"
-            >
-              <Linkedin size={20} />
-            </a>
-            <a
-              href="https://www.instagram.com/favianskii_"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="p-3 rounded-lg border border-gray-800 hover:border-gray-600 hover:bg-gray-800 transition-all"
-            >
-              <Instagram size={20} />
-            </a>
-            <a
-              href="https://github.com/FavianRP"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="p-3 rounded-lg border border-gray-800 hover:border-gray-600 hover:bg-gray-800 transition-all"
-            >
-              <Github size={20} />
-            </a>
-            <a
-              href="mailto:favfianrafi@gmail.com"
-              className="p-3 rounded-lg border border-gray-800 hover:border-gray-600 hover:bg-gray-800 transition-all"
-            >
-              <Mail size={20} />
-            </a>
+            <a href="https://www.linkedin.com/in/favianrafipratama" target="_blank" rel="noopener noreferrer" className="p-3 rounded-lg border border-gray-800 hover:border-gray-600 hover:bg-gray-800 transition-all"><Linkedin size={20} /></a>
+            <a href="https://www.instagram.com/favianskii_" target="_blank" rel="noopener noreferrer" className="p-3 rounded-lg border border-gray-800 hover:border-gray-600 hover:bg-gray-800 transition-all"><Instagram size={20} /></a>
+            <a href="https://github.com/FavianRP" target="_blank" rel="noopener noreferrer" className="p-3 rounded-lg border border-gray-800 hover:border-gray-600 hover:bg-gray-800 transition-all"><Github size={20} /></a>
+            <a href="mailto:favfianrafi@gmail.com" className="p-3 rounded-lg border border-gray-800 hover:border-gray-600 hover:bg-gray-800 transition-all"><Mail size={20} /></a>
           </div>
         </div>
       </section>
 
       {/* Footer */}
-      <footer className="py-8 px-6 border-t border-gray-800 animate-fade-up">
-        <div className="max-w-4xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
-          <div className="flex items-center gap-4">
-            <p className="text-gray-400 text-sm">© 2025 • FavianRP</p>
-          </div>
-          
-          <div className="flex items-center gap-4">
-            <button className="p-2 rounded-lg border border-gray-800 hover:bg-gray-800 transition-all">
-              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
-              </svg>
-            </button>
-            <button
-              className="group px-4 py-2 text-sm bg-gray-800 hover:bg-gray-700 rounded-lg transition-all flex items-center gap-2"
-              onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-            >
-              <span className="transform transition-transform duration-300 group-hover:-translate-y-1">
-                ↑
-              </span>
-              <span className="transition-colors group-hover:text-white">Ke atas</span>
-            </button>
-          </div>
-        </div>
-      </footer>
+      <Footer/>
     </div>
   );
 }

@@ -1,39 +1,43 @@
 import { ArrowRight } from "lucide-react";
 import Footer from "../../components/Footer";
 
-export default function WriteupsPage() {
-  const writeups = [
+export default function ProjectsPage() {
+    const projects = [
     {
-      title: "PatriotCTF 2025",
-      description: "Writeup CTF yang telah saya kerjakan dari event di CTFtime",
-      category: "WriteUp",
-      url: "https://hackmd.io/@dre4mer/patriotctf"
+      title: "chatbot-gunadarma",
+      description: "Projek ini dibuat untuk memenuhi tugas Sains Data – Natural Language Processing berbasis Chatbot. Chatbot ini melayani pertanyaan seputar Universitas Gunadarma.",
+      category: "Project",
+      url: "https://github.com/FavianRP/chatbot-gunadarma" 
     },
     {
-      title: "Perjalanan Menuju OSCP",
-      description:
-        "Pengalaman saya meraih sertifikasi OSCP. Sebuah perjalanan yang seru dan penuh tantangan.",
-      url: "#",
+      title: "Passwd Checker",
+      description: "Sebuah tool untuk mengetahui seberapa kuat password kita.",
+      category: "Project",
+      url: "https://github.com/FavianRP/passwd-checker" 
     },
     {
-      title: "Hackfest0x08",
-      description:
-        "WriteUp CTF dari event CTF open recruitment Cyber Community Universitas Gunadarma (CCUG).",
-      url: "#",
+      title: "InfoKelas",
+      description: "Website App yang saya buat untuk menyelesaikan masalah yang ada di kelas.",
+      category: "Project"
     },
+    {
+      title: "LandingPage CARKAS",
+      description: "Sebuah landingpage yang berguna untuk berjualan mobil second atau bekas.",
+      category: "Project",
+      url: "https://favianrp.github.io/carkas.github.io/"
+    }
   ];
 
   return (
     <div className="min-h-screen bg-black text-white pt-32 pb-20 px-6 font-poppins">
       <div className="max-w-4xl mx-auto animate-fade-down">
-        <h1 className="text-5xl font-bold mb-2">Writeups</h1>
+        <h1 className="text-5xl font-bold mb-2">Projects</h1>
         <p className="text-gray-400 mb-10">
-          Bagaimana cara saya memecahkan solusi Cyber Security, biasanya dari Lab atau
-          kasus nyata.
+          Lihat project yang saya sudah buat selama berada di dunia teknologi ini.
         </p>
 
         <div className="space-y-4">
-          {writeups.map((item, index) => (
+          {projects.map((item, index) => (
             <a
               key={index}
               href={item.url}
