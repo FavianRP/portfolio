@@ -27,6 +27,12 @@ export default function PortfolioPage() {
 
   const posts = [
     {
+      title: "chatbot-gunadarma",
+      description: "Projek ini dibuat untuk memenuhi tugas Sains Data – Natural Language Processing berbasis Chatbot. Chatbot ini melayani pertanyaan seputar Universitas Gunadarma.",
+      category: "Project",
+      url: "https://github.com/FavianRP/chatbot-gunadarma" 
+    },
+    {
       title: "Passwd Checker",
       description: "Sebuah tool untuk mengetahui seberapa kuat password kita.",
       category: "Project",
