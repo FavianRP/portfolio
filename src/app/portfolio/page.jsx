@@ -49,7 +49,8 @@ export default function PortfolioPage() {
     {
       title: "PatriotCTF 2025",
       description: "Writeup CTF yang telah saya kerjakan dari event di CTFtime",
-      category: "WriteUp"
+      category: "WriteUp",
+      url: "https://hackmd.io/@dre4mer/patriotctf"
     },
     {
       title: "Hackfest0x08",
