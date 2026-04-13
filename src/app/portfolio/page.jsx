@@ -21,7 +21,7 @@ const educationData = [
     type: "Education",
     sub: "S1 Informatics",
     year: "2024 – Present",
-    tags: ["Data Science – NLP", "Algoritma & Pemrograman", "Basis Data", "Rekayasa Perangkat Lunak", "Jaringan Komputer", "Sistem Operasi"],
+    tags: ["Lembaga Pengembangan Komputerisasi", "Cyber Community Universitas Gunadarma", "Gunadarma Esports", "Data Science – NLP", "Algoritma & Pemrograman", "Rekayasa Perangkat Lunak", "Jaringan Komputer", "Sistem Operasi"],
   },
   {
     icon: "💻",

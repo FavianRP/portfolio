@@ -4,6 +4,12 @@ import Footer from "../../components/Footer";
 export default function WriteupsPage() {
   const writeups = [
     {
+      title: "WASKITA MANUNGGAL SIBER CTF 2026",
+      description: "CTF write-ups from Competition part of the Waskita Manunggal Siber activity organized by Pusat Siber TNI AD (Pussiberad).",
+      category: "WriteUp",
+      url: "https://hackmd.io/@dre4mer/WMS-2026"
+    },
+    {
       title: "PatriotCTF 2025",
       description: "CTF write-ups I’ve completed from Capture The Flag events listed on CTFtime.",
       category: "WriteUp",
