@@ -24,14 +24,14 @@ export default function Footer() {
   return (
     <footer className="mt-10 py-8 px-6 border-t border-gray-800 animate-fade-up">
       <div className="max-w-4xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
-        <span className="text-gray-400 text-sm">© 2025 • FavianRP</span>
+        <span className="text-gray-400 text-sm">© 2026 • FavianRP</span>
 
         <button
           className="group px-4 py-2 text-sm bg-gray-800 hover:bg-gray-700 rounded-lg transition-all flex items-center gap-2"
           onClick={goHome}
         >
           <span className="transform transition-transform duration-300 group-hover:-translate-y-1">↑</span>
-          <span className="transition-colors group-hover:text-white">Ke home</span>
+          <span className="transition-colors group-hover:text-white">Back to home</span>
         </button>
       </div>
     </footer>

@@ -5,22 +5,15 @@ export default function WriteupsPage() {
   const writeups = [
     {
       title: "PatriotCTF 2025",
-      description: "Writeup CTF yang telah saya kerjakan dari event di CTFtime",
+      description: "CTF write-ups I’ve completed from Capture The Flag events listed on CTFtime.",
       category: "WriteUp",
       url: "https://hackmd.io/@dre4mer/patriotctf"
     },
     {
-      title: "Perjalanan Menuju OSCP",
-      description:
-        "Pengalaman saya meraih sertifikasi OSCP. Sebuah perjalanan yang seru dan penuh tantangan.",
-      url: "#",
-    },
-    {
       title: "Hackfest0x08",
-      description:
-        "WriteUp CTF dari event CTF open recruitment Cyber Community Universitas Gunadarma (CCUG).",
-      url: "#",
-    },
+      description: "CTF write-ups from the Cyber Community Universitas Gunadarma (CCUG) open recruitment event.",
+      category: "WriteUp"
+    }
   ];
 
   return (
@@ -28,8 +21,7 @@ export default function WriteupsPage() {
       <div className="max-w-4xl mx-auto animate-fade-down">
         <h1 className="text-5xl font-bold mb-2">Writeups</h1>
         <p className="text-gray-400 mb-10">
-          Bagaimana cara saya memecahkan solusi Cyber Security, biasanya dari Lab atau
-          kasus nyata.
+          How I solve cybersecurity problems, usually from labs or real-world cases.
         </p>
 
         <div className="space-y-4">

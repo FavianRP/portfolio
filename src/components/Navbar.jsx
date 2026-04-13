@@ -126,39 +126,6 @@ export default function Navbar() {
           </a>
         </div>
       </div>
-
-      {/* Demo Content */}
-      <div className="pt-20 min-h-screen bg-slate-950 text-white">
-        <section id="home" className="min-h-screen flex items-center justify-center bg-gradient-to-b from-slate-900 to-slate-950">
-          <div className="text-center px-6">
-            <h1 className="text-5xl md:text-7xl font-bold mb-4">
-              Hi, I'm <span className="text-red-400">Favian</span>
-            </h1>
-            <p className="text-xl text-slate-400">Web Developer & Cyber Security Enthusiast</p>
-          </div>
-        </section>
-
-        <section id="skills" className="min-h-screen flex items-center justify-center bg-slate-900">
-          <div className="text-center px-6">
-            <h2 className="text-4xl font-bold mb-4 text-red-400">Skills</h2>
-            <p className="text-slate-400">My technical expertise</p>
-          </div>
-        </section>
-
-        <section id="projects" className="min-h-screen flex items-center justify-center bg-slate-950">
-          <div className="text-center px-6">
-            <h2 className="text-4xl font-bold mb-4 text-red-400">Projects</h2>
-            <p className="text-slate-400">Things I've built</p>
-          </div>
-        </section>
-
-        <section id="contact" className="min-h-screen flex items-center justify-center bg-slate-900">
-          <div className="text-center px-6">
-            <h2 className="text-4xl font-bold mb-4 text-red-400">Contact</h2>
-            <p className="text-slate-400">Let's work together</p>
-          </div>
-        </section>
-      </div>
     </>
   );
 }

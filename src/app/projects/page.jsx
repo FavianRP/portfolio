@@ -5,24 +5,25 @@ export default function ProjectsPage() {
     const projects = [
     {
       title: "chatbot-gunadarma",
-      description: "Projek ini dibuat untuk memenuhi tugas Sains Data – Natural Language Processing berbasis Chatbot. Chatbot ini melayani pertanyaan seputar Universitas Gunadarma.",
+      description: "This project was created as part of a Data Science – Natural Language Processing assignment based on a chatbot. This chatbot is designed to answer questions related to Universitas Gunadarma.",
       category: "Project",
       url: "https://github.com/FavianRP/chatbot-gunadarma" 
     },
     {
       title: "Passwd Checker",
-      description: "Sebuah tool untuk mengetahui seberapa kuat password kita.",
+      description: "A tool to check how strong your password is.",
       category: "Project",
       url: "https://github.com/FavianRP/passwd-checker" 
     },
     {
       title: "InfoKelas",
-      description: "Website App yang saya buat untuk menyelesaikan masalah yang ada di kelas.",
-      category: "Project"
+      description: "A web application that I built to solve problems in my classroom.",
+      category: "Project",
+      url: "https://github.com/FavianRP/InfoKelas"
     },
     {
       title: "LandingPage CARKAS",
-      description: "Sebuah landingpage yang berguna untuk berjualan mobil second atau bekas.",
+      description: "A landing page designed for selling used or second-hand cars.",
       category: "Project",
       url: "https://favianrp.github.io/carkas.github.io/"
     }
@@ -33,7 +34,7 @@ export default function ProjectsPage() {
       <div className="max-w-4xl mx-auto animate-fade-down">
         <h1 className="text-5xl font-bold mb-2">Projects</h1>
         <p className="text-gray-400 mb-10">
-          Lihat project yang saya sudah buat selama berada di dunia teknologi ini.
+          View the projects I’ve built throughout my journey in the tech world.
         </p>
 
         <div className="space-y-4">
